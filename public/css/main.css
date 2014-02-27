@@ -34,10 +34,15 @@ nav a {color:#ccc;}
 #nav-main a {display:block; padding:10px 0;}
 #nav-main a:hover {color:#fff; text-decoration:none;}
 #nav-main a span {display:inline-block}
-#nav-main .boys:before {display:block; content:' '; width:30px; height:31px; margin:auto; background:transparent url('../img/sprite.png') no-repeat -32px 0; background-size:1240px auto;}
+#nav-main a:before {display:block; content:' '; margin:auto; background-image:url('../img/sprite.png'); background-size:1240px auto;}
+#nav-main .boys:before {width:30px; height:31px; background-position:-32px 0;}
 #nav-main .boys:hover:before {background-position:0 0;}
-#nav-main .girls:before {display:block; content:' '; width:23px; height:36px; margin:auto; background:transparent url('../img/sprite.png') no-repeat -25px -33px; background-size:1240px auto;}
+#nav-main .girls:before {width:23px; height:36px; background-position:-25px -33px;}
 #nav-main .girls:hover:before {background-position:0 -33px;}
+#nav-main .babies:before {width:35px; height:34px; background-position:-37px -71px;}
+#nav-main .babies:hover:before {background-position:0 -71px;}
+#nav-main .pets:before {width:32px; height:29px; background-position:-34px -106px;}
+#nav-main .pets:hover:before {background-position:0 -106px;}
 #nav-user {position:absolute; width:100%; bottom:20px;}
 
 /*----------------------- Tablet (landscape) -----------------------*/
