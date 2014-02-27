@@ -26,7 +26,19 @@ a {text-decoration:none;}
 a:hover, a:active {text-decoration:underline;}
 a:focus {outline:none;}
 * {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul, ol, li {margin:0; padding:0; list-style:none;}
 
+nav {position:fixed; top:0; left:0; width:100px; height:100%; text-align:center; background:#333}
+nav a {color:#ccc;}
+#nav-main {position:absolute; top:60px; width:100%;}
+#nav-main a {display:block; padding:10px 0;}
+#nav-main a:hover {color:#fff; text-decoration:none;}
+#nav-main a span {display:inline-block}
+#nav-main .boys:before {display:block; content:' '; width:30px; height:31px; margin:auto; background:transparent url('../img/sprite.png') no-repeat -32px 0; background-size:1240px auto;}
+#nav-main .boys:hover:before {background-position:0 0;}
+#nav-main .girls:before {display:block; content:' '; width:23px; height:36px; margin:auto; background:transparent url('../img/sprite.png') no-repeat -25px -33px; background-size:1240px auto;}
+#nav-main .girls:hover:before {background-position:0 -33px;}
+#nav-user {position:absolute; width:100%; bottom:20px;}
 
 /*----------------------- Tablet (landscape) -----------------------*/
 @media only screen and (min-width: 920px) and (max-width: 1240px) {	
